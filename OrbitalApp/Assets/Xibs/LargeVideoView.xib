@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hind-Bold.ttf">
+            <string>Hind-Bold</string>
+        </array>
+        <array key="Hind-SemiBold.ttf">
+            <string>Hind-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="VideoView" customModule="OrbitalApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="photo_1920x1080.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UE4-dr-Bk8" userLabel="Thumbnail Image View" customClass="GradientImageView" customModule="OrbitalApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07c-1z-5Jv" customClass="GradientView" customModule="OrbitalApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                    </accessibility>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Live Planet Icon" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-g0-ojZ" userLabel="Creator Image View" customClass="GradientImageView" customModule="OrbitalApp" customModuleProvider="target">
+                    <rect key="frame" x="-5" y="-5" width="36" height="36"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="A58-Yb-g4Q"/>
+                        <constraint firstAttribute="width" constant="36" id="WpT-oW-oqD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dei-ce-N0q">
+                    <rect key="frame" x="41" y="7" width="159" height="27"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Creator Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHf-qz-UbP">
+                            <rect key="frame" x="0.0" y="0.0" width="159" height="10"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="W0f-32-IAt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Hind-SemiBold" family="Hind" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Video Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-XA-Z0A">
+                            <rect key="frame" x="0.0" y="10" width="159" height="17"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="22x-fO-koL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Hind-Bold" family="Hind" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-yE-cRO" userLabel="Select Button">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
+                    <connections>
+                        <action selector="onSelectButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="N5p-OY-uIU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="07c-1z-5Jv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7qm-2G-yaQ"/>
+                <constraint firstItem="UE4-dr-Bk8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8FW-Eh-Pc1"/>
+                <constraint firstItem="wQY-yE-cRO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KZ2-4E-qbe"/>
+                <constraint firstItem="UE4-dr-Bk8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M0u-W0-V2B"/>
+                <constraint firstAttribute="bottom" secondItem="UE4-dr-Bk8" secondAttribute="bottom" id="MB2-1O-Iqs"/>
+                <constraint firstItem="fkk-g0-ojZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-5" id="TNw-73-Be1"/>
+                <constraint firstAttribute="bottom" secondItem="07c-1z-5Jv" secondAttribute="bottom" id="XTy-fs-s6z"/>
+                <constraint firstAttribute="bottom" secondItem="wQY-yE-cRO" secondAttribute="bottom" id="Ybo-f4-O4D"/>
+                <constraint firstItem="Dei-ce-N0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="Zyb-Wy-77b"/>
+                <constraint firstAttribute="trailing" secondItem="UE4-dr-Bk8" secondAttribute="trailing" id="cFz-1a-j36"/>
+                <constraint firstItem="wQY-yE-cRO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dCP-wF-Bir"/>
+                <constraint firstItem="fkk-g0-ojZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-5" id="dYB-QY-JEl"/>
+                <constraint firstAttribute="trailing" secondItem="07c-1z-5Jv" secondAttribute="trailing" id="ipY-p7-ZWc"/>
+                <constraint firstAttribute="trailing" secondItem="wQY-yE-cRO" secondAttribute="trailing" id="lZv-Qt-gKU"/>
+                <constraint firstItem="Dei-ce-N0q" firstAttribute="leading" secondItem="fkk-g0-ojZ" secondAttribute="trailing" constant="10" id="nmr-hp-law"/>
+                <constraint firstAttribute="trailing" secondItem="Dei-ce-N0q" secondAttribute="trailing" id="zMF-FF-9QQ"/>
+                <constraint firstItem="07c-1z-5Jv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zUc-TU-8bM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="creatorImageView" destination="fkk-g0-ojZ" id="akg-rd-leI"/>
+                <outlet property="creatorNameLabel" destination="GHf-qz-UbP" id="jrx-cT-5fQ"/>
+                <outlet property="thumbnailImageView" destination="UE4-dr-Bk8" id="EXr-Qo-eiF"/>
+                <outlet property="videoTitleLabel" destination="vbV-XA-Z0A" id="Hl0-WN-paX"/>
+            </connections>
+            <point key="canvasLocation" x="-1.6000000000000001" y="282.4587706146927"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Live Planet Icon" width="128" height="128"/>
+        <image name="photo_1920x1080.jpg" width="1000" height="1500"/>
+    </resources>
+</document>
