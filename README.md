@@ -1,3 +1,9 @@
+# Introduction
+
+This open-source project demonstrates how to interact with the VideoCoin Network from an iOS app, as well as integrate the network to your own backend service. You will also find a full implementation of RTMP streaming and HLS playback in iOS using standard or open-sorce solutions, with a detailed instruction below, to further assist your integration with the VideoCoin Network.
+
+For instructions that are not listed here, see: https://docs.videocoin.network/developers
+
 # Setup
 
 ## Installation
@@ -5,28 +11,30 @@
 1. Run `setup.sh` in the project directory. 
 2. Make sure the target is set to `OrbitalApp` in the automatically-opened Xcode project.
 
-## Firebase configuration
+## Firebase Configuration
+
+This app will communicate with a Firebase database which you will have set up and configured in a specific format.
+
 1. Open the Firebase console: https://console.firebase.google.com/
 2. Create a new Firebase project.
 3. Add a new iOS project and follow the steps to add the .plist file, Firebase dependencies, and initialization code.
-4. Run the iOS app on a local device or emulator to verify proper Firebase configuration.
+4. Follow the specification of the Firebase project here: https://liveplanet.atlassian.net/wiki/spaces/V/pages/655032321/Orbital+app+-+Firebase
+5. Run the iOS app on a local device or emulator to verify proper Firebase configuration.
 
 # Targets
 
 A variety of targets are available to help debug any issues with streaming video to the VideoCoin network.
 
 - VideoCoin -- Distributable framework to interact with the VideoCoin Network in Swift language.
-- [Clarify] VideoCoinTest -- Tests for VideoCoin framework.
+- VideoCoinTest -- Tests for VideoCoin framework.
 - VideoCoinHost -- Dummy app to run VideoCoinTest.
 - orbitalApp -- Orbital app.
-- [Clarify] vlcDebug -- App to debug VLC framework.
-- [Clarify] haishinkitDebug -- App to debug HaishinKit framework.
-- RtmpDebug
-- AVPlayerDebug
+- vlcDebug -- App to debug VLC framework.
+- haishinkitDebug -- App to debug HaishinKit framework.
+- RtmpDebug -- App to debug RTMP streaming.
+- AVPlayerDebug -- App to debug AVPlayer stream playback.
 
 # Testing & Debugging
-
-- [Unit tests best practices in Xcode and Swift](https://www.avanderlee.com/swift/unit-tests-best-practices/)
 
 ## Debugging VideoCoin Network
 
@@ -46,9 +54,9 @@ To set up a local RTMP server, see guidelines below.
 
 Run `firebaseDebug` app.
 
-# Local RTMP Server (Mac)
+# Setting Up Local RTMP Server (Mac)
 
-This section will help you set up a local RTMP server to stream & play a live video. Local environment makes it easy for you to test & debug corner cases.
+This section will help you debug RTMP streaming & playback via your own local RTMP server.
 
 Use [NGINX](https://www.nginx.com/) to host a RTMP server.
 
